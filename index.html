@@ -1,1 +1,24 @@
 
+<html>
+<body>
+
+<h1>Scavenger Hunt</h1>
+<button onclick="myFunction()">CLICK ME</button>
+<script>
+function myFunction() {
+	var answer = prompt("Enter a number answer to the problem");
+	var run = true;
+	while(run === true){
+		if(answer === "1"){
+		confirm("You have entered the correct answer. Go to room 2.");
+		run = false;
+		}
+		if(answer !== "1"){
+		answer = prompt("You have entered the wrong answer. Please enter another number ");
+		}
+	}
+}
+</script>
+
+</body>
+</html>
